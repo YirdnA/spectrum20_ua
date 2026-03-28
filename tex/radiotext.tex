@@ -1,5 +1,5 @@
 %Radio description
-{\Large Radio Bands}
+{\Large Радіодіапазони}
 %Draw a sinewave with
 %	{Initial Amplitude x.xxx}{Initial Time-width x.xxx}{Initial Number of cycles x}
 %	{Second Amplitude x.xxx}{Second Time-width x.xxx}{Second Number of cycles x}
@@ -45,7 +45,7 @@
 % FM: f(x) = cos(20∙x+15∙sin(x))
 
 
-% Preamble: 
+% Preamble:
 % \pgfplotsset{width=7cm,compat=1.14}
 % \begin{tikzpicture}
 % \begin{axis}[
@@ -89,29 +89,29 @@
 %
 %List of telecommunications regulatory bodies
 % https://en.wikipedia.org/wiki/List_of_telecommunications_regulatory_bodies
-% 
+%
 \item {%
 \setlength{\fboxsep}{0pt}%
 \setlength{\fboxrule}{0.5pt}%
-The radio spectrum (ELF to EHF) is populated by many more items than can be shown on this chart. Only a small sampling of the bands used around the world are shown. Each country has its own rules and regulations for allotting bands in this region. FCC \fbox{\includegraphics[width=0.15in]{tex/us.eps}}, CRTC \fbox{\includegraphics[width=0.15in]{tex/ca.eps}}, OFCOM \fbox{\includegraphics[width=0.15in]{tex/gb.eps}}, BNA  \fbox{\includegraphics[width=0.15in]{tex/de.eps}}, CII  \fbox{\includegraphics[width=0.15in]{tex/cn.eps}}...
+Радіоспектр (від ELF до EHF) містить набагато більше елементів, ніж можна показати на цій діаграмі. Тут наведено лише невелику вибірку діапазонів, що використовуються по всьому світу. Кожна країна має власні правила та норми розподілу діапазонів у цій області. FCC \fbox{\includegraphics[width=0.15in]{tex/us.eps}}, CRTC \fbox{\includegraphics[width=0.15in]{tex/ca.eps}}, OFCOM \fbox{\includegraphics[width=0.15in]{tex/gb.eps}}, BNA  \fbox{\includegraphics[width=0.15in]{tex/de.eps}}, CII  \fbox{\includegraphics[width=0.15in]{tex/cn.eps}}...
 }%
-\item Communication by EMR is done by modulating the carrier waveform:
+\item Зв'язок за допомогою EMR здійснюється шляхом модуляції несучої хвилі:
 
 \begin{tabular}{ccc}%
 \begin{tikzpicture} % No modulation
-	\begin{axis}[smooth,grid=none,scale=1,xlabel={No modulation},line width=1pt,]
-		\addplot[white, smooth,xlabel={No modulation},line join=round, line cap=round] {sin(x*20*180/pi)};
+	\begin{axis}[smooth,grid=none,scale=1,xlabel={Без модуляції},line width=1pt,]
+		\addplot[white, smooth,xlabel={Без модуляції},line join=round, line cap=round] {sin(x*20*180/pi)};
 	\end{axis}
 \end{tikzpicture}&
 \begin{tikzpicture} %AM
-	\begin{axis}[smooth,grid=none,scale=1,xlabel={Amplitude Modulation (AM)},line width=1pt,]
+	\begin{axis}[smooth,grid=none,scale=1,xlabel={Амплітудна модуляція (AM)},line width=1pt,]
 		%\addplot[white, smooth,line join=round, line cap=round] {sin(x*20*180/pi)*sin(x*1*180/pi)};
 		\addplot[white, smooth,line join=round, line cap=round] {0.5*sin(x*20*180/pi)*(1+sin(x*1.7*180/pi))+8};
 
 	\end{axis}
 \end{tikzpicture}&
 \begin{tikzpicture} % FM
-	\begin{axis}[smooth,grid=none,scale=1,xlabel={Frequency Modulation (FM)},line width=1pt,]
+	\begin{axis}[smooth,grid=none,scale=1,xlabel={Частотна модуляція (FM)},line width=1pt,]
 		\addplot[white, smooth,line join=round, line cap=round] {sin((x*20 + 6*(sin(x*2*180/pi)))*180/pi)};
 	\end{axis}
 \end{tikzpicture}
@@ -119,43 +119,43 @@ The radio spectrum (ELF to EHF) is populated by many more items than can be show
 %
 % \item Not all references agree on the ULF band range, the HAARP range is used here.
 %
-\item {\bfseries RA}dio {\bfseries D}etecting {\bfseries A}nd {\bfseries R}anging (RADAR) uses microwaves to detect the distance and speed of objects.
+\item {\bfseries РА}діо{\bfseries Д}етектування {\bfseries Т}а {\bfseries В}изначення {\bfseries В}ідстані (RADAR) використовує мікрохвилі для визначення відстані та швидкості об'єктів.
 
-\item {\bfseries C}itizens {\bfseries B}and Radio (CB) contains 40 stations between 26.965 - 27.405MHz %\hspace{0.02in}
+\item Радіо {\bfseries г}ромадського {\bfseries д}іапазону (CB) містить 40 станцій між 26.965 - 27.405MHz %\hspace{0.02in}
 {% CB Radio
   \definecolor{BoxColor}{rgb}{0.6,0.68,0.86}
   \psframebox[linestyle=none,framesep=1pt,fillcolor=BoxColor,linearc=0]{\black CB}
 }.
 %
- Schumann resonances are produced in the cavity between the Earth and the ionosphere \hspace{0.02in}%
+ Резонанси Шумана виникають у порожнині між Землею та іоносферою \hspace{0.02in}%
  \psframebox[fillstyle=none,linestyle=none]{\psscalebox{0.7}{\blip{0,-.07}{S}}}%
  \hspace{0.02in}.
 %
- Hydrogen gas emits radio band EMR at 21cm  \hspace{0.05in}%
+ Водень випромінює радіодіапазонне EMR на довжині хвилі 21cm  \hspace{0.05in}%
  \psframebox[fillstyle=none,linestyle=none]{\psscalebox{0.7}{\blip{0,-.07}{H}}}%
  \hspace{0.02in}.
 %
- Time / frequency standards shown as \psframebox[linestyle=none] {\rput(0.1in,0){\timestandard}} \hspace{0.1in}.
-% 
- Other individual frequencies are represented as icons:\vspace{0.1in}\\
-\begin{tabular}{cp{1.4in}cp{1in}cp{1.7in}}
-% 
-\psframebox[linestyle=none]{\submarine{0.02,.0}{xxHz}}\hspace{0.2in}\vspace{0.05in} & Submarine&
-\psframebox[linestyle=none]{\rput(0.15,.05)\pager}&Pager&
-\psframebox[linestyle=none]{\rput(0.05,.05){\psframebox[fillstyle=solid,fillcolor=Itinerant,linecolor=Itinerant,linearc=0,framesep=1pt]{\textcolor{Black}{GMRS}}}}&General Mobile Radio Service\\%
+ Стандарти часу / частоти показані як \psframebox[linestyle=none] {\rput(0.1in,0){\timestandard}} \hspace{0.1in}.
 %
-\psframebox[linestyle=none]{\rput(0.14,0.01){\psframebox[fillstyle=solid,fillcolor=green,linecolor=green,linearc=0]{\textcolor{Black}{xxm}}}}\hspace{.1in}\vspace{0.05in} & Ham / international&
-\psframebox[linestyle=none]{\rput(0.14,.03){\weatherstation}\hspace{.03in}\vspace{0.08in}} & Weather&
+ Інші окремі частоти представлені значками:\vspace{0.1in}\\
+\begin{tabular}{cp{1.4in}cp{1in}cp{1.7in}}
+%
+\psframebox[linestyle=none]{\submarine{0.02,.0}{xxHz}}\hspace{0.2in}\vspace{0.05in} & Підводний човен&
+\psframebox[linestyle=none]{\rput(0.15,.05)\pager}&Пейджер&
+\psframebox[linestyle=none]{\rput(0.05,.05){\psframebox[fillstyle=solid,fillcolor=Itinerant,linecolor=Itinerant,linearc=0,framesep=1pt]{\textcolor{Black}{GMRS}}}}&Загальна мобільна радіослужба\\%
+%
+\psframebox[linestyle=none]{\rput(0.14,0.01){\psframebox[fillstyle=solid,fillcolor=green,linecolor=green,linearc=0]{\textcolor{Black}{xxm}}}}\hspace{.1in}\vspace{0.05in} & Аматорське / міжнародне&
+\psframebox[linestyle=none]{\rput(0.14,.03){\weatherstation}\hspace{.03in}\vspace{0.08in}} & Погода&
 \psframebox[linestyle=none]{\rput(0.15,.04){
 	\psframe[linestyle=solid,linecolor=gray,fillstyle=solid,fillcolor=gray,linearc=0](-.2,-.08)(.2,.08)
 	\psframe[hatchwidth=2pt, hatchsep=1.5pt,linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow,fillcolor=gray,linearc=0](-.2,-.08)(.2,.08)
 	}
 	\hspace{.2in}}\vspace{0.05in}
-	& Short wave\\
+	& Короткі хвилі\\
 %
 %
-\psframebox[linestyle=none]{\rput(0.11,.05){\psframebox[fillstyle=solid,fillcolor=Itinerant,linecolor=Itinerant,linearc=0,framesep=1pt]{\textcolor{Black}{FRS}}}}&Family Radio Service&
-\psframebox[linestyle=none]{\rput(0.15,-0.1){\wirelessmic}}&Wireless Mic.&
+\psframebox[linestyle=none]{\rput(0.11,.05){\psframebox[fillstyle=solid,fillcolor=Itinerant,linecolor=Itinerant,linearc=0,framesep=1pt]{\textcolor{Black}{FRS}}}}&Сімейна радіослужба&
+\psframebox[linestyle=none]{\rput(0.15,-0.1){\wirelessmic}}&Бездрот. мік.&
 \psframebox[linestyle=none]{
 % 	\rput(0.15,.05){
 % 		\psframebox[fillstyle=solid,linearc=0,linecolor=yellow,framesep=1pt,fillcolor=yellow,linewidth=1pt,linestyle=solid]{\textcolor{Black}{CP}}
@@ -165,8 +165,8 @@ The radio spectrum (ELF to EHF) is populated by many more items than can be show
 		\psline[linecolor=cyan  ](-.15,0.04)(0.15,0.04)
 		\psline[linecolor=green ](-.20,0.02)(0.10,0.02)
 		\psline[linecolor=orange](-.10,0.00)(0.20,0.00)
-	} 
-	\hspace{.03in}\vspace{0.08in}} & Cellular Phones
+	}
+	\hspace{.03in}\vspace{0.08in}} & Мобільні телефони
 	\psframebox[fillstyle=solid,linearc=0,linecolor=orange,framesep=1pt,fillcolor=orange,linewidth=1pt,linestyle=solid]{\textcolor{Black}{3G}}
 	\psframebox[fillstyle=solid,linearc=0,linecolor=green, framesep=1pt,fillcolor=green, linewidth=1pt,linestyle=solid]{\textcolor{Black}{4G}}
 	\psframebox[fillstyle=solid,linearc=0,linecolor=cyan,  framesep=1pt,fillcolor=cyan,  linewidth=1pt,linestyle=solid]{\textcolor{Black}{5G}}

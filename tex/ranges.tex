@@ -75,31 +75,31 @@
 \newlength{\LargeLabelPositionLeft}  \setlength{\LargeLabelPositionLeft}{\LargeLabelPosition-0.2in}
 \newlength{\LargeLabelPositionRight}  \setlength{\LargeLabelPositionRight}{\LargeLabelPosition+0.2in}
 
-\uput[180]{90}(\LargeLabelPosition,34.3){GAMMA RAYS}
+\uput[180]{90}(\LargeLabelPosition,34.3){ГАММА-ПРОМЕНІ}
 \psline[linecolor=LightRange](\EMRPositionC,33.690)(\LargeLabelRightPosition,33.690)
 \psline{<->}(\LargeLabelPosition,33.690)(\LargeLabelPosition,35.3)
 
 \psline{<->}(\LargeLabelPosition,33.690)(\LargeLabelPosition,30.368)
-\uput[180]{90}(\LargeLabelPosition,32.03){X-RAYS}
+\uput[180]{90}(\LargeLabelPosition,32.03){РЕНТГЕНІВСЬКІ ПРОМЕНІ}
 
 \psline{<->}(\LargeLabelPosition,30.368)(\LargeLabelPosition,27.707)
-\uput[180]{90}(\LargeLabelPosition,28.65){ULTRAVIOLET}
+\uput[180]{90}(\LargeLabelPosition,28.65){УЛЬТРАФІОЛЕТ}
 
 %760-400nm (394-749 THz)
 \psline[linecolor=LightRange](\EMRPositionC,27.243)(\LargeLabelRightPosition,27.243)
 \psline{<->}(\LargeLabelPosition,27.707)(\LargeLabelPosition,27.243)
-\uput[180]{0}(\LargeLabelPosition,27.48){VISIBLE}
+\uput[180]{0}(\LargeLabelPosition,27.48){ВИДИМЕ}
 
 \psline[linecolor=LightRange](\EMRPositionC,23.724)(\LargeLabelRightPosition,23.724)
 \psline{<->}(\LargeLabelPosition,27.243)(\LargeLabelPosition,23.724)
-\uput[180]{90}(\LargeLabelPosition,25.48){INFRARED}
+\uput[180]{90}(\LargeLabelPosition,25.48){ІНФРАЧЕРВОНЕ}
 
 %0.3GHz bottom
 \psline{<->}(\LargeLabelPosition,23.724)(\LargeLabelPosition,17.080)
-\uput[180]{90}(\LargeLabelPosition,19.55){MICROWAVE}
+\uput[180]{90}(\LargeLabelPosition,19.55){МІКРОХВИЛІ}
 
 \psline{<->}(\LargeLabelPosition,17.080)(\LargeLabelPosition,9.144)
-\uput[180]{90}(\LargeLabelPosition,13.11){RADIO WAVES}
+\uput[180]{90}(\LargeLabelPosition,13.11){РАДІОХВИЛІ}
 
 }
 
@@ -135,9 +135,9 @@
 %  \psline[linecolor=LineGray]{C-C}(9.8,-0.5)(9.8,-0.2)% wraparound on first line only
 
 
-  \uput{2pt}[270]( 4.9,-0.1){\psframebox[fillstyle=solid,fillcolor=FColor,linecolor=FColor]{\textcolor{Black}{Frequency}}}
-  \uput{2pt}[270]( 5.7,-0.1){\psframebox[fillstyle=solid,fillcolor=WColor,linecolor=WColor]{\textcolor{Black}{Wavelength}}}
-  \uput{2pt}[270]( 6.5,-0.1){\psframebox[fillstyle=solid,fillcolor=EColor,linecolor=EColor]{\textcolor{Black}{Energy}}}
+  \uput{2pt}[270]( 4.9,-0.1){\psframebox[fillstyle=solid,fillcolor=FColor,linecolor=FColor]{\textcolor{Black}{Частота}}}
+  \uput{2pt}[270]( 5.7,-0.1){\psframebox[fillstyle=solid,fillcolor=WColor,linecolor=WColor]{\textcolor{Black}{Довжина хвилі}}}
+  \uput{2pt}[270]( 6.5,-0.1){\psframebox[fillstyle=solid,fillcolor=EColor,linecolor=EColor]{\textcolor{Black}{Енергія}}}
 
 
   \newcounter{StartHeight}	\setcounter{StartHeight}{3}
@@ -157,7 +157,7 @@
   \psframe(0.00,3.05)(9.80,3.25)\wrapbtarrow{Fill}{3.15}
   \psframe(0.00,3.55)(5.73,3.75)\wrapdnarrow{Fill}{3.65}
   \rput(6.55,1.15){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black,framesep=1pt]{0.1Hz}}
-  \rput(4.9,2.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\delta$ (Delta brain waves)}}
+  \rput(4.9,2.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\delta$ (Дельта мозкові хвилі)}}
   {\psset{linecolor=yellow,linestyle=solid,linewidth=1pt}
 	\psline{<-}(6.55,1.05)(9.80,1.05)
 	\psline{-}(0,1.55)(9.80,1.55)
@@ -172,7 +172,7 @@
   \psframe(5.73,3.55)(9.8,3.75)\wrapuparrow{Fill}{3.65}
   \psframe(0.00,4.05)(9.8,4.25)\wrapdnarrow{Fill}{4.15}
   \rput(5.73,3.65){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black,framesep=1pt]{3Hz}}
-  \rput(4.9,4.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\theta$ (Theta brain waves)}}
+  \rput(4.9,4.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\theta$ (Тета мозкові хвилі)}}
   \rput(9.8,4.15){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black]{8Hz}}
   {\psset{linecolor=yellow,linestyle=solid,linewidth=1pt}
 	\psline{<-}(5.73,3.55)(9.8,3.55)
@@ -183,14 +183,14 @@
   \definecolor{Fill}{rgb}{1,0.7,0.7}\psset{hatchcolor=Fill}
   \psframe(0.00,4.55)(5.73,4.75)
   \rput(0,4.65){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black,framesep=1pt]{8Hz}}
-  \rput(2.87,4.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\alpha$ (Alpha brain waves)}}
+  \rput(2.87,4.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\alpha$ (Альфа мозкові хвилі)}}
   \psline[linecolor=yellow,linestyle=solid,linewidth=1pt]{<->}(0.00,4.55)(5.73,4.55)
 
   % Low Beta 12-15
   \definecolor{Fill}{rgb}{1,0.6,0.6}\psset{hatchcolor=Fill}
   \psframe(5.73,4.55)(8.89,4.75)
   \rput(5.73,4.65){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black,framesep=1pt]{12Hz}}
-  \rput(6.82,4.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\beta$ (Low Beta brain waves)}}
+  \rput(6.82,4.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\beta$ (Низькі Бета мозкові хвилі)}}
   \psline[linecolor=yellow,linestyle=solid,linewidth=1pt]{<->}(5.73,4.55)(8.89,4.55)
 
   % Mid Beta 15-18
@@ -198,7 +198,7 @@
   \psframe(8.89,4.55)(9.8,4.75)\wrapuparrow{Fill}{4.65}
   \psframe(0.00,5.05)(1.67,5.25)\wrapdnarrow{Fill}{5.15}
   \rput(8.89,4.65){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black,framesep=1pt]{15Hz}}
-  \rput(0.7,5.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\beta$ (Mid Beta brain waves)}}
+  \rput(0.7,5.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\beta$ (Середні Бета мозкові хвилі)}}
   {\psset{linecolor=yellow,linestyle=solid,linewidth=1pt}
 	\psline{<-}(8.89,4.55)(9.8,4.55)
 	\psline{->}(0.00,5.05)(1.67,5.05)
@@ -208,7 +208,7 @@
   \definecolor{Fill}{rgb}{1,0.4,0.4}\psset{hatchcolor=Fill}
   \psframe(1.67,5.05)(8.89,5.25)
   \rput(1.67,5.15){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black,framesep=1pt]{\textcolor{white}{18Hz}}}
-  \rput(5.28,5.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\beta$ (High Beta brain waves)}}
+  \rput(5.28,5.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\beta$ (Високі Бета мозкові хвилі)}}
   \psline[linecolor=yellow,linestyle=solid,linewidth=1pt]{<->}(1.67,5.05)(8.89,5.05)
 
   % Gamma 30Hz
@@ -217,7 +217,7 @@
   \psframe(0.00,5.55)(3.0,5.75)\wrapdnarrow{Fill}{5.65}
   \psframe[fillstyle=gradient,gradangle=90,gradbegin=Fill,gradend=DarkRange,gradmidpoint=1.0,linewidth=0pt,linestyle=none](3.0,5.55)(4.0,5.75)
   \rput(8.89,5.15){\psframebox[framearc=0.25,fillstyle=solid, fillcolor=Fill,linecolor=Black,framesep=1pt]{\textcolor{white}{30Hz}}}
-  \rput(1.5,5.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\gamma$ (Gamma brain waves)}}
+  \rput(1.5,5.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\boldmath$\gamma$ (Гамма мозкові хвилі)}}
   {\psset{linecolor=yellow,linestyle=solid,linewidth=1pt}
 	\psline{<-}(8.89,5.05)(9.8,5.05)
 	\psline{->}(0.00,5.55)(4.0,5.55)
@@ -251,87 +251,87 @@
 
   % GWEN 150 to 175 kHz from http://www.dxing.com/lw.htm
   \psset{fillstyle=solid,linecolor=yellow,linewidth=1pt,linestyle=solid,framesep=0pt,fillcolor=yellow}
-  \psline{|<*->|}(1.91,11.55)(4.09,11.55)\rput(3.00,11.55){\psframebox{\textcolor{Black}{Ground Wave Emergency Network}}}
+  \psline{|<*->|}(1.91,11.55)(4.09,11.55)\rput(3.00,11.55){\psframebox{\textcolor{Black}{Мережа наземних хвиль}}}
 
   %155-281kHz from http://www.dxing.com/lw.htm
-  \psline{|<*-}(2.37,11.75)(9.8,11.75)\wrapuparrow{yellow}{11.75}\rput(6.09,11.75){\psframebox{\textcolor{Black}{Europe and Asia AM}}}
-  \psline{->|}(0.00,12.25)(0.98,12.25)\wrapdnarrow{yellow}{12.25}\rput(.5,12.25){\psframebox{\textcolor{Black}{EU\&Asia AM}}}
+  \psline{|<*-}(2.37,11.75)(9.8,11.75)\wrapuparrow{yellow}{11.75}\rput(6.09,11.75){\psframebox{\textcolor{Black}{Європа та Азія AM}}}
+  \psline{->|}(0.00,12.25)(0.98,12.25)\wrapdnarrow{yellow}{12.25}\rput(.5,12.25){\psframebox{\textcolor{Black}{ЄС\&Азія AM}}}
 
   %Radiolocation from OMEGA poster 110-130kHz
-  \psline{|<*->|}(7.32,11.05)(9.68,11.05) \rput(8.50,11.05){\psframebox{\textcolor{Black}{Radiolocation}}}
+  \psline{|<*->|}(7.32,11.05)(9.68,11.05) \rput(8.50,11.05){\psframebox{\textcolor{Black}{Радіолокація}}}
   
   %Maritime Mobile from OMEGA poster 110-190kHz
-  \psline{|<*-}(7.32,11.18)(9.8,11.18) \wrapuparrow{yellow}{11.18}\rput(8.50,11.18){\psframebox{\textcolor{Black}{Maritime Mobile}}}
-  \psline{->|}(0.00,11.66)(5.25,11.66)\wrapdnarrow{yellow}{11.66}\rput[l](0,11.66){\psframebox{\textcolor{Black}{Maritime Mobile}}}
+  \psline{|<*-}(7.32,11.18)(9.8,11.18) \wrapuparrow{yellow}{11.18}\rput(8.50,11.18){\psframebox{\textcolor{Black}{Морський мобільний}}}
+  \psline{->|}(0.00,11.66)(5.25,11.66)\wrapdnarrow{yellow}{11.66}\rput[l](0,11.66){\psframebox{\textcolor{Black}{Морський мобільний}}}
    
   %160-190kHz from http://www.dxing.com/lw.htm
   %replaced by maritime mobile
   %\psline{|<*->|}(2.82,11.65)(5.25,11.65)  \rput(4.53,11.65){\psframebox{\textcolor{Black}{Open US}}}
 
   %200-430kHz from http://www.dxing.com/lw.htm
-  \psline{|<*-}(5.97,11.55)(9.80,11.55)\wrapuparrow{yellow}{11.55} \rput(7.38,11.55){\psframebox{\textcolor{Black}{Navigational Beacons}}}
-  \psline{->|}(0.00,12.05)(7.00,12.05)\wrapdnarrow{yellow}{12.05} \rput(4,12.05){\psframebox{\textcolor{Black}{Navigational Beacons}}}
+  \psline{|<*-}(5.97,11.55)(9.80,11.55)\wrapuparrow{yellow}{11.55} \rput(7.38,11.55){\psframebox{\textcolor{Black}{Навігаційні маяки}}}
+  \psline{->|}(0.00,12.05)(7.00,12.05)\wrapdnarrow{yellow}{12.05} \rput(4,12.05){\psframebox{\textcolor{Black}{Навігаційні маяки}}}
 
   %235-325kHz
-  \psline{|<*-}(8.25,11.65)(9.80,11.65)\wrapuparrow{yellow}{11.65} \rput(9,11.65){\psframebox{\textcolor{Black}{Marine Radio}}}
-  \psline{->|}(0.00,12.15)(3.04,12.15)\wrapdnarrow{yellow}{12.15} \rput(1.5,12.15){\psframebox{\textcolor{Black}{Marine Radio}}}
+  \psline{|<*-}(8.25,11.65)(9.80,11.65)\wrapuparrow{yellow}{11.65} \rput(9,11.65){\psframebox{\textcolor{Black}{Морське радіо}}}
+  \psline{->|}(0.00,12.15)(3.04,12.15)\wrapdnarrow{yellow}{12.15} \rput(1.5,12.15){\psframebox{\textcolor{Black}{Морське радіо}}}
 
   %430-500kHz from http://www.dxing.com/lw.htm
-  \psline{|<*->|}(7.00,12.05)(9.13,12.05) \rput(8.06,12.05){\psframebox{\textcolor{Black}{Morse code}}}
+  \psline{|<*->|}(7.00,12.05)(9.13,12.05) \rput(8.06,12.05){\psframebox{\textcolor{Black}{Код Морзе}}}
 
   %500kHz from http://www.dxing.com/lw.htm
   \rput(9.13,12.2){\psframebox[linestyle=none,framesep=1pt,fillcolor=red]{\white SOS}}
 
   %500-540kHz from http://www.dxing.com/lw.htm
   \psline{|<*-}(9.13,12.05)(9.8,12.05)\wrapuparrow{yellow}{12.05}
-  \psline{->|}(0.00,12.55)(0.42,12.55)\wrapdnarrow{yellow}{12.55} \rput(9.56,12.05){\psframebox{\textcolor{Black}{Beacons}}}
+  \psline{->|}(0.00,12.55)(0.42,12.55)\wrapdnarrow{yellow}{12.55} \rput(9.56,12.05){\psframebox{\textcolor{Black}{Маяки}}}
 
   %from http://www.dxing.com/tuning.htm  1610 to 1700 kHz being the new "X" or "extended" AM band
   \psline{|<*->|}(6.06,13.05)(6.83,13.05) \rput(6.45,13.05){\psframebox{\textcolor{Black}{X-Band}}}
 
   %from http://www.dxing.com/tuning.htm  1700 to 1800 kHz misc beacons
-  \psline{|<*->|}(6.83,13.05)(7.64,13.05) \rput(7.24,13.05){\psframebox{\textcolor{Black}{Beacons}}}
+  \psline{|<*->|}(6.83,13.05)(7.64,13.05) \rput(7.24,13.05){\psframebox{\textcolor{Black}{Маяки}}}
 
   %1800-2000kHz 160m ham band
   %\psline{<->}(7.64,13.05)(9.13,13.05) \rput(8.38,13.05){\psframebox{\textcolor{Black}{160m}}}
 
   %from http://www.dxing.com/tuning.htm  2000-2300kHz Marine
-  \psline{|<*-}(9.13,13.05)(9.80,13.05)\wrapuparrow{yellow}{13.05}\rput(9.49,13.05){\psframebox{\textcolor{Black}{Marine}}}
-  \psline{->|}(0.00,13.57)(1.31,13.57)\wrapdnarrow{yellow}{13.57} \rput(0.94,13.57){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{|<*-}(9.13,13.05)(9.80,13.05)\wrapuparrow{yellow}{13.05}\rput(9.49,13.05){\psframebox{\textcolor{Black}{Морське}}}
+  \psline{->|}(0.00,13.57)(1.31,13.57)\wrapdnarrow{yellow}{13.57} \rput(0.94,13.57){\psframebox{\textcolor{Black}{Морське}}}
 
   %from http://www.dxing.com/tuning.htm  2182kHz distress signal
   \rput(0.56,13.65){\psframebox[linestyle=none,framesep=1pt,fillcolor=red]{\white SOS}}
 
   %from http://www.dxing.com/tuning.htm  2498-2850 kHz More maritime stations
-  \psline{|<*->|}(2.47,13.57)(4.34,13.57) \rput(3.40,13.57){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{|<*->|}(2.47,13.57)(4.34,13.57) \rput(3.40,13.57){\psframebox{\textcolor{Black}{Морське}}}
 
   %from http://www.dxing.com/tuning.htm  2850-3150 kHz airplane info
-  \psline{|<*->|}(4.34,13.57)(5.75,13.57) \rput(5.04,13.57){\psframebox{\textcolor{Black}{Aeronautical}}}
+  \psline{|<*->|}(4.34,13.57)(5.75,13.57) \rput(5.04,13.57){\psframebox{\textcolor{Black}{Авіаційне}}}
 
   %from http://www.dxing.com/tuning.htm  3150 to 3200 kHz: This range is allocated to fixed stations, with most communications in RTTY.
   %\psline{|<*->|}(5.75,13.57)(5.97,13.57) \rput(5.83,13.69){\psframebox{\textcolor{Black}{TTY}}}
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](5.75,13.52)(5.97,13.62)
 
   %from http://www.dxing.com/tuning.htm 3400-3500 kHz: This range is used for aeronautical
-  \psline{|<*->|}(6.83,13.57)(7.24,13.57) \rput(7.04,13.57){\psframebox{\textcolor{Black}{Aero}}}
+  \psline{|<*->|}(6.83,13.57)(7.24,13.57) \rput(7.04,13.57){\psframebox{\textcolor{Black}{Авіа}}}
   
   %Loran-C submitted by Poul-Henning Kamp
   \psline{|<*->|}(4.48,11.05)(7.32,11.05) \rput(5.90,11.05){\psframebox{\textcolor{Black}{LORAN-C navigation}}}
 
   %Radionavigation from OMEGA poster 9-14kHz
-  \psline{|<*->|}(1.33,9.55)(7.58,9.55) \rput(4.45,9.55){\psframebox{\textcolor{Black}{Radionavigation}}}
+  \psline{|<*->|}(1.33,9.55)(7.58,9.55) \rput(4.45,9.55){\psframebox{\textcolor{Black}{Радіонавігація}}}
  
   %Maritime Mobile from OMEGA poster 14-19.95kHz
-  \psline{|<*-}(7.58,9.55)(9.80,9.55)\wrapuparrow{yellow}{9.55}\rput[l](7.68,9.55){\psframebox{\textcolor{Black}{Maritime Mobile}}}
-  \psline{->|}(0.00,10.05)(2.78,10.05)\wrapdnarrow{yellow}{10.05} \rput[l](0,10.05){\psframebox{\textcolor{Black}{Maritime Mobile}}}
+  \psline{|<*-}(7.58,9.55)(9.80,9.55)\wrapuparrow{yellow}{9.55}\rput[l](7.68,9.55){\psframebox{\textcolor{Black}{Морський мобільний}}}
+  \psline{->|}(0.00,10.05)(2.78,10.05)\wrapdnarrow{yellow}{10.05} \rput[l](0,10.05){\psframebox{\textcolor{Black}{Морський мобільний}}}
  
   %Maritime Mobile from OMEGA poster 20.05-59kHz
-  \psline{|<*-}(2.85,10.05)(9.80,10.05)\wrapuparrow{yellow}{10.05}\rput[l](4,10.05){\psframebox{\textcolor{Black}{Maritime Mobile}}}
-  \psline{->|}(0.00,10.55)(8.31,10.55)\wrapdnarrow{yellow}{10.55} \rput[l](0.0,10.55){\psframebox{\textcolor{Black}{Maritime Mobile}}}
+  \psline{|<*-}(2.85,10.05)(9.80,10.05)\wrapuparrow{yellow}{10.05}\rput[l](4,10.05){\psframebox{\textcolor{Black}{Морський мобільний}}}
+  \psline{->|}(0.00,10.55)(8.31,10.55)\wrapdnarrow{yellow}{10.55} \rput[l](0.0,10.55){\psframebox{\textcolor{Black}{Морський мобільний}}}
  
   %Maritime Mobile from OMEGA poster 61-70kHz
-  \psline{|<*-}(8.79,10.55)(9.80,10.55)\wrapuparrow{yellow}{10.55}\rput[r](9.8,10.55){\psframebox{\textcolor{Black}{Maritime Mobile}}}
-  \psline{->|}(0.00,11.05)(4.48,11.05)\wrapdnarrow{yellow}{11.05} \rput(1,11.05){\psframebox{\textcolor{Black}{Maritime Mobile}}}
+  \psline{|<*-}(8.79,10.55)(9.80,10.55)\wrapuparrow{yellow}{10.55}\rput[r](9.8,10.55){\psframebox{\textcolor{Black}{Морський мобільний}}}
+  \psline{->|}(0.00,11.05)(4.48,11.05)\wrapdnarrow{yellow}{11.05} \rput(1,11.05){\psframebox{\textcolor{Black}{Морський мобільний}}}
  
  
  
@@ -340,8 +340,8 @@
   %\psline{|<*->|}(9.13,13.57)(9.35,13.57) \rput(9.24,13.57){\psframebox{\textcolor{Black}{MIL}}}
 
   %4.00-4.438MHz from Radioshack PatrolMan SW-60 shortwave radio guide
-  \psline{|<*-}(9.13,13.6)(9.80,13.6)\wrapuparrow{yellow}{13.6} \rput(9.46,13.6){\psframebox{\textcolor{Black}{Marine}}}
-  \psline{->|}(0.00,14.1)(0.80,14.1)\wrapdnarrow{yellow}{14.1} \rput(.4,14.1){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{|<*-}(9.13,13.6)(9.80,13.6)\wrapuparrow{yellow}{13.6} \rput(9.46,13.6){\psframebox{\textcolor{Black}{Морське}}}
+  \psline{->|}(0.00,14.1)(0.80,14.1)\wrapdnarrow{yellow}{14.1} \rput(.4,14.1){\psframebox{\textcolor{Black}{Морське}}}
 
   %from http://www.dxing.com/tuning.htm 4438 to 4650 kHz: This range is mainly used for fixed and mobile
   %\psline{|<*->|}(0.80,14.05)(1.46,14.05)\rput(1.13,14.15){\psframebox{\textcolor{Black}{Fixed \&}}}\rput(1.13,14.05){\psframebox{\textcolor{Black}{Mobile}}}
@@ -351,17 +351,17 @@
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](0.80,14.05)(3.70,14.15)
 
   %from http://www.dxing.com/tuning.htm 5450 to 5730 kHz: This is another band for aeronautical
-  \psline{|<*->|}(3.70,14.1)(4.41,14.1)\rput(4.06,14.1){\psframebox{\textcolor{Black}{Aero}}}
+  \psline{|<*->|}(3.70,14.1)(4.41,14.1)\rput(4.06,14.1){\psframebox{\textcolor{Black}{Авіа}}}
 
   %from http://www.dxing.com/tuning.htm 5730 to 5950 kHz: Misc.
   %\psline{|<*->|}(4.41,14.2)(4.94,14.2)\rput(4.68,14.2){\psframebox{\textcolor{Black}{Misc.}}}
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](4.41,14.15)(4.94,14.25)
 
   %from http://www.dxing.com/tuning.htm 6200 to 6525 kHz: maritime
-  \psline{|<*->|}(5.53,14.2)(6.25,14.2)\rput(5.89,14.2){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{|<*->|}(5.53,14.2)(6.25,14.2)\rput(5.89,14.2){\psframebox{\textcolor{Black}{Морське}}}
 
   %from http://www.dxing.com/tuning.htm 6525 to 6765 kHz: aeronautical
-  \psline{|<*->|}(6.25,14.2)(6.76,14.2)\rput(6.50,14.2){\psframebox{\textcolor{Black}{Aero}}}
+  \psline{|<*->|}(6.25,14.2)(6.76,14.2)\rput(6.50,14.2){\psframebox{\textcolor{Black}{Авіа}}}
 
   %from http://www.dxing.com/tuning.htm 6765 to 7000 kHz: Misc
   %\psline{|<*->|}(6.76,14.2)(7.24,14.2)\rput(7.00,14.2){\psframebox{\textcolor{Black}{Misc.}}}
@@ -371,23 +371,23 @@
 
   %from http://www.dxing.com/tuning.htm 8195 to 8815 kHz: maritime
   \psline{|<*-}(9.47,14.2)(9.80,14.2)\wrapuparrow{yellow}{14.2}
-  \psline{->|}(0.00,14.75)(0.70,14.75)\wrapdnarrow{yellow}{14.75} \rput(.35,14.75){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{->|}(0.00,14.75)(0.70,14.75)\wrapdnarrow{yellow}{14.75} \rput(.35,14.75){\psframebox{\textcolor{Black}{Морське}}}
 
   %from http://www.dxing.com/tuning.htm 8815-9040 kHz: This is another aeronautical
-  \psline{|<*->|}(0.70,14.75)(1.06,14.75)\rput(0.88,14.75){\psframebox{\textcolor{Black}{Aero}}}
+  \psline{|<*->|}(0.70,14.75)(1.06,14.75)\rput(0.88,14.75){\psframebox{\textcolor{Black}{Авіа}}}
 
   %from http://www.dxing.com/tuning.htm 9040-9500kHz international broadcasters.
   %from http://www.dxing.com/tuning.htm 9500 to 9900 kHz: This is the 31-meter international broadcasting
   %from http://www.dxing.com/tuning.htm 9900 to 9995 kHz: International broadcasters, FSK modes
   %from http://www.dxing.com/tuning.htm 10005 to 10100 kHz: This range is used for aeronautical
   %too small to fit in
-  \psline{|<*->|}(1.06,14.75)(2.62,14.75)\rput(1.77,14.75){\psframebox{\textcolor{Black}{International}}}
+  \psline{|<*->|}(1.06,14.75)(2.62,14.75)\rput(1.77,14.75){\psframebox{\textcolor{Black}{Міжнародне}}}
 
   %from http://www.dxing.com/tuning.htm 10150 to 11175 kHz: International and relays
-  \psline{|<*->|}(2.69,14.65)(4.05,14.65)\rput(3.37,14.65){\psframebox{\textcolor{Black}{Intnl. and relays}}}
+  \psline{|<*->|}(2.69,14.65)(4.05,14.65)\rput(3.37,14.65){\psframebox{\textcolor{Black}{Міжнар. та ретр.}}}
 
   %from http://www.dxing.com/tuning.htm 11175 to 11400 kHz: This range is used for aeronautical
-  \psline{|<*->|}(4.05,14.65)(4.34,14.65)\rput(4.20,14.75){\psframebox{\textcolor{Black}{Aero}}}
+  \psline{|<*->|}(4.05,14.65)(4.34,14.65)\rput(4.20,14.75){\psframebox{\textcolor{Black}{Авіа}}}
 
   %from http://www.dxing.com/tuning.htm 11400 to 11650 kHz International
   %\psline{|<*->|}(4.34,14.65)(4.64,14.65)\rput(4.49,14.75){\psframebox{\textcolor{Black}{Intnl}}}
@@ -396,11 +396,11 @@
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](4.34,14.65)(5.45,14.75)
 
   %from http://www.dxing.com/tuning.htm 12330 to 13200 kHz: This is a busy maritime
-  \psline{|<*->|}(5.45,14.7)(6.41,14.7)\rput(5.93,14.7){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{|<*->|}(5.45,14.7)(6.41,14.7)\rput(5.93,14.7){\psframebox{\textcolor{Black}{Морське}}}
 
   %Too small and crammed to show
   %from http://www.dxing.com/tuning.htm 13200 to 13360 kHz: Aeronautical
-  %\psline{|<*->|}(6.41,14.7)(6.58,14.7)\rput(6.49,14.7){\psframebox{\textcolor{Black}{Aero}}}
+  %\psline{|<*->|}(6.41,14.7)(6.58,14.7)\rput(6.49,14.7){\psframebox{\textcolor{Black}{Авіа}}}
   %from http://www.dxing.com/tuning.htm 13360 to 13600 kHz: This range is used by fixed stations,
   %\psline{|<*->|}(6.58,14.7)(6.83,14.7)\rput(6.71,14.7){\psframebox{\textcolor{Black}{Fixed}}}
   %from http://www.dxing.com/tuning.htm 13800 to 14000 kHz: This is used by fixed
@@ -408,19 +408,19 @@
   %from http://www.dxing.com/tuning.htm 14350 to 14990 kHz: This segment is used by fixed stations,
   %\psline{|<*->|}(7.59,14.7)(8.21,14.7)\rput(7.90,14.7){\psframebox{\textcolor{Black}{Fixed}}}
   %from http://www.dxing.com/tuning.htm 15010 to 15100 kHz: This range is for aeronautical
-  %\psline{|<*->|}(8.23,14.7)(8.31,14.7)\rput(8.27,14.7){\psframebox{\textcolor{Black}{Aero}}}
+  %\psline{|<*->|}(8.23,14.7)(8.31,14.7)\rput(8.27,14.7){\psframebox{\textcolor{Black}{Авіа}}}
   %from http://www.dxing.com/tuning.htm 15600 to 16460 kHz: This band is used by fixed
   %\psline{|<*->|}(8.77,14.7)(9.53,14.7)\rput(9.15,14.7){\psframebox{\textcolor{Black}{Fixed}}}
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](6.41,14.65)(9.53,14.75)
 
   %from http://www.dxing.com/tuning.htm 16460 to 17360 kHz: This range is shared between maritime and fixed
   \psline{|<*-}(9.53,14.7)(9.80,14.7)\wrapuparrow{yellow}{14.7}
-  \psline{->|}(0.00,15.2)(0.48,15.2)\wrapdnarrow{yellow}{15.2}\rput(0.24,15.2){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{->|}(0.00,15.2)(0.48,15.2)\wrapdnarrow{yellow}{15.2}\rput(0.24,15.2){\psframebox{\textcolor{Black}{Морське}}}
 
   %from http://www.dxing.com/tuning.htm 17360 to 17550 kHz: The range is shared by aeronautical and fixed
-  %\psline{|<*->|}(0.48,15.2)(0.64,15.2)\rput(0.56,15.2){\psframebox{\textcolor{Black}{Aero}}}
+  %\psline{|<*->|}(0.48,15.2)(0.64,15.2)\rput(0.56,15.2){\psframebox{\textcolor{Black}{Авіа}}}
   %from http://www.dxing.com/tuning.htm 17900 to 18030 kHz: This band is used for aeronautical
-  %\psline{|<*->|}(0.92,15.2)(1.02,15.2)\rput(0.97,15.2){\psframebox{\textcolor{Black}{Aero}}}
+  %\psline{|<*->|}(0.92,15.2)(1.02,15.2)\rput(0.97,15.2){\psframebox{\textcolor{Black}{Авіа}}}
   %from http://www.dxing.com/tuning.htm 18030 to 18068 kHz: This range is used by fixed stations
   %\psline{|<*->|}(1.02,15.2)(1.05,15.2)\rput(1.03,15.2){\psframebox{\textcolor{Black}{Fixed}}}
   %from http://www.dxing.com/tuning.htm 18168 to 19990 kHz: Misc.
@@ -428,19 +428,19 @@
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](0.48,15.15)(2.48,15.25)
 
   %from http://www.dxing.com/tuning.htm 20010 to 21000 kHz: This range is mainly used by fixed stations and a few aeronautical stations
-  \psline{|<*->|}(2.49,15.2)(3.17,15.2)\rput(2.83,15.2){\psframebox{\textcolor{Black}{Aero}}}
+  \psline{|<*->|}(2.49,15.2)(3.17,15.2)\rput(2.83,15.2){\psframebox{\textcolor{Black}{Авіа}}}
 
   %from http://www.dxing.com/tuning.htm 21850 to 22000 kHz: This band is shared by fixed and aeronautical stations
-  %\psline{|<*->|}(3.74,15.2)(3.83,15.2)\rput(3.78,15.2){\psframebox{\textcolor{Black}{Aero}}}
+  %\psline{|<*->|}(3.74,15.2)(3.83,15.2)\rput(3.78,15.2){\psframebox{\textcolor{Black}{Авіа}}}
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](3.74,15.15)(3.83,15.25)
 
   %from http://www.dxing.com/tuning.htm 22000 to 22855 kHz: This range is reserved for maritime
-  \psline{|<*->|}(3.83,15.2)(4.37,15.2)\rput(4.10,15.2){\psframebox{\textcolor{Black}{Marine}}}
+  \psline{|<*->|}(3.83,15.2)(4.37,15.2)\rput(4.10,15.2){\psframebox{\textcolor{Black}{Морське}}}
 
   %from http://www.dxing.com/tuning.htm 22855 to 23200 kHz: This band is used by fixed
   %\psline{|<*->|}(4.37,15.2)(4.58,15.2)\rput(4.48,15.2){\psframebox{\textcolor{Black}{Fixed}}}
   %from http://www.dxing.com/tuning.htm 23200 to 23350 kHz: Aeronautical
-  %\psline{|<*->|}(4.58,15.2)(4.67,15.2)\rput(4.63,15.2){\psframebox{\textcolor{Black}{Aero}}}
+  %\psline{|<*->|}(4.58,15.2)(4.67,15.2)\rput(4.63,15.2){\psframebox{\textcolor{Black}{Авіа}}}
   %from http://www.dxing.com/tuning.htm 23350 to 24890 kHz: This segment is used by fixed stations in FSK and digital modes.
   %\psline{|<*->|}(4.67,15.2)(5.58,15.2)\rput(5.13,15.2){\psframebox{\textcolor{Black}{Fixed}}}
   %from http://www.dxing.com/tuning.htm 25010 to 25550 kHz: This band is used by fixed, mobile, and maritime stations
@@ -455,7 +455,7 @@
   \psframe[linestyle=solid,linecolor=yellow,fillstyle=hlines,hatchangle=45,hatchcolor=yellow](4.37,15.15)(8.22,15.25)
 
   %from http://www.dxing.com/tuning.htm 72 to 76 MHz: This range is used for remote control signals for model airplanes and garage door openers, wireless microphones (including those used by law enforcement agencies), and two-way communications inside factories, warehouses, and other industrial facilities. Most channels are spaced at 20 kHz intervals.
-  \psframe[framearc=0.25](0.99,16.0)(1.76,16.1)\rput(1.38,16.05){\textcolor{Black}{\tiny Remote Ctrl}}
+  \psframe[framearc=0.25](0.99,16.0)(1.76,16.1)\rput(1.38,16.05){\textcolor{Black}{\tiny Дист. керув.}}
 
 }
 
@@ -489,7 +489,7 @@
   \definecolor{BoxColor}{rgb}{0.6,0.68,0.86}
   \psframe[fillstyle=solid, fillcolor=BoxColor,linewidth=0pt,linestyle=none](6.73,16.1)(9.80,16.3)\wrapuparrow{BoxColor}{16.2}
   \psframe[fillstyle=solid, fillcolor=BoxColor,linewidth=0pt,linestyle=none](0.00,16.6)(0.19,16.8)\wrapdnarrow{BoxColor}{16.75}
-  \rput(9.07,16.2){Aeronautical}
+  \rput(9.07,16.2){Авіаційне}
 
   \rput(8.39,16.2){\psframebox[linestyle=none,framesep=1pt,fillcolor=red,fillstyle=solid]{\white SOS}}
 
@@ -501,7 +501,7 @@
   \definecolor{BoxColor}{rgb}{0.6,0.86,0.86}
   \psframe[fillstyle=solid, fillcolor=BoxColor,linewidth=0pt,linestyle=none](2.66,16.6)(3.67,16.7)
   %\rput(2.66,16.70){162MHz}
-  \rput(3.17,16.65){Marine Mobile}
+  \rput(3.17,16.65){Морський мобільний}
 
   % Digital Television (DTV) Television (Analog) VHF & UHF  174-216 MHz
   %\definecolor{BoxColor}{rgb}{0.6,0.8,0.8}
@@ -524,14 +524,14 @@
   \definecolor{BoxColor}{rgb}{0.6,0.68,0.86}
   \psframe[fillstyle=solid, fillcolor=BoxColor,linewidth=0pt,linestyle=none](7.30,16.6)(9.80,16.8)\wrapuparrow{BoxColor}{16.7}
   \psframe[fillstyle=solid, fillcolor=BoxColor,linewidth=0pt,linestyle=none](0.00,17.2)(5.64,17.3)\wrapdnarrow{BoxColor}{17.25}
-  \rput(9.07,16.7){Military}
+  \rput(9.07,16.7){Військове}
   \rput(8.39,16.7){\psframebox[linestyle=none,framesep=1pt,fillcolor=red,fillstyle=solid]{\white SOS}}
-  \rput(2.82,17.25){Military}
+  \rput(2.82,17.25){Військове}
 
 %from http://www.dxing.com/above30.htm 400 to 406 MHz: This range is used primarily by government and military stations in FM.
 %from http://www.dxing.com/above30.htm 406 to 420 MHz: In the United States, this band is used exclusively by the federal government. All transmissions are in FM, with most channels spaced at 25 kHz intervals.
   \definecolor{BoxColor}{rgb}{0.9,0.68,0.86}
-  \psframe[fillstyle=solid, fillcolor=BoxColor,linewidth=0pt,linestyle=none](5.64,17.2)(6.33,17.35) \rput(6.15,17.28){Gov}
+  \psframe[fillstyle=solid, fillcolor=BoxColor,linewidth=0pt,linestyle=none](5.64,17.2)(6.33,17.35) \rput(6.15,17.28){Держ.}
   \rput(5.85,17.27){\psframebox[linestyle=none,framesep=1pt,fillcolor=red,fillstyle=solid]{\white SOS}}
 
 
@@ -559,7 +559,7 @@
   \psframe(1.57,17.0)(9.8,17.1)\wrapuparrow{Fill}{17.05}
   \psframe(0.0,17.5)(8.79,17.6)\wrapdnarrow{Fill}{17.55}
 %   \rput(1.57,17.05){\textcolor{white}{0.3GHz}}
-  \rput(1,17.55){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\textcolor{white}{\tiny Microwave P-band (Previous)}}}
+  \rput(1,17.55){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=1pt]{\textcolor{white}{\tiny Мікрохвильовий P-діапазон (Previous)}}}
 
   % Microwave L-band (1-2 GHz)
   \definecolor{Fill}{rgb}{0.2,0.1,0.67}\psset{hatchcolor=Fill}
@@ -568,7 +568,7 @@
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](8.79,17.52)
   \rput(8.79,17.75){\textcolor{white}{1GHz}}
 %   \rput(4,18.14){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave L-band (Long)}}}
-  \rput(4.715,18.14){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave L-band}}}
+  \rput(4.715,18.14){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий L-діапазон}}}
   \rput(5.825,18.14){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{(Long)}}}
 
   %Hydrogen line at 21cm (1.42758313333 GHz)
@@ -629,7 +629,7 @@
   \psframe(0.0,18.55)(8.79,18.75)\wrapdnarrow{Fill}{18.65}
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](8.79,18.02)
   \rput(8.79,18.14){\textcolor{white}{2GHz}}
-  \rput(5.5,18.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave S-band (Short)}}}
+  \rput(5.5,18.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий S-діапазон (Short)}}}
 
   %water absorption band at 2.4GHz water (that's why microwave ovens use that band). Thanks to Poul-Henning Kamp 
 % Later proven wrong by Anders J. Johansson (20060219)
@@ -647,13 +647,13 @@
   \psframe(0.0,19.05)(8.79,19.25)\wrapdnarrow{Fill}{19.15}
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](8.79,18.52)
   \rput(8.79,18.77){\textcolor{white}{4GHz}}
-  \rput(5.5,19.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave C-band (Compromise)}}}
+  \rput(5.5,19.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий C-діапазон (Compromise)}}}
 
   %Wireless LAN   Frequency Range; 2.4GHz to 2.5GHz , 5.15GHz to 5.875GHz  (From D-Link Air expert card, good for America and Europe)
   %2.4GHz to 2.5GHz
   \psframe[fillstyle=solid, fillcolor=gray](1.57,18.67)(2.15,18.77)\rput(1.86,18.72){\textcolor{yellow}{W-LAN}}
   %5.15GHz to 5.875GHz
-  \psframe[fillstyle=solid, fillcolor=gray](2.57,19.15)(4.43,19.25)\rput(3.50,19.20){\textcolor{yellow}{Wireless LAN}}
+  \psframe[fillstyle=solid, fillcolor=gray](2.57,19.15)(4.43,19.25)\rput(3.50,19.20){\textcolor{yellow}{Бездрот. LAN}}
 
  
  %MVDDS/ITFS (Multichannel Multipoint Data Service/ Instructional Television Fixed Service, Thanks to Ranjan Acharya (source IEE spectrum March 2004) 2.5-2.7GHz
@@ -709,7 +709,7 @@
   \psframe(0.0,19.55)(5.30,19.75)\wrapdnarrow{Fill}{19.65}
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](8.79,19.02)
   \rput(8.79,19.15){\textcolor{white}{8GHz}}
-  \rput(3.25,19.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave X-band (X marks the spot)}}}
+  \rput(3.25,19.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий X-діапазон (X marks the spot)}}}
 
   % Microwave Ku-band (12.5-18 GHz)
   \definecolor{Fill}{rgb}{0.6,0.1,0.67}\psset{hatchcolor=Fill}
@@ -718,7 +718,7 @@
   \psline[linecolor=Black,linewidth=1pt,linestyle=solid](5.30,19.55)(5.30,19.75)
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](5.30,19.52)
   \rput(5.30,19.65){\textcolor{white}{12.5GHz}}
-  \rput(8.4,19.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave Ku-band (Kurtz Under)}}}
+  \rput(8.4,19.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий Ku-діапазон (Kurtz Under)}}}
 
   % Microwave K-band (18-27.25 GHz)
   \definecolor{Fill}{rgb}{0.7,0.1,0.67}\psset{hatchcolor=Fill}
@@ -726,7 +726,7 @@
   \psline[linecolor=Black,linewidth=1pt,linestyle=solid](0.66,20.05)(0.66,20.25)
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](0.66,20.02)
   \rput(0.66,20.15){\textcolor{white}{18GHz}}
-  \rput(1.85,20.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave K-band (Kurtz)}}}
+  \rput(1.85,20.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий K-діапазон (Kurtz)}}}
 
 
 
@@ -833,17 +833,17 @@
   \psclip{\psframe[fillstyle=none,linestyle=none](0,0)(2.4,.3)}
     \pscurve[fillstyle=crosshatch,hatchcolor=Black,hatchangle=180,hatchwidth=0.5pt,hatchsep=1pt,fillcolor=blue,linecolor=Black,linestyle=solid]
 	(0,.2)(.75,.15)(1,.02)(1.25,.15)(2,0.2)
-    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{Water absorption 22GHz}}}
+    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{Поглинання водою 22GHz}}}
   \endpsclip}
 
 {
 	% Cordless phone 2.4GHz
 	\psset{fillstyle=none, linecolor=yellow,linestyle=solid, linewidth=1pt, linearc=.05}
-	\rput[r](1.47,18.62){\textcolor{yellow}{Cordless phone 2.4GHz}}
+	\rput[r](1.47,18.62){\textcolor{yellow}{Бездрот. тел. 2.4GHz}}
 	\psline{-*}(1.50,18.62)(1.57,18.62)(1.57,18.5)
 	%     
 	% Microwave oven 2.45GHz
-	\rput[l](1.96,18.62){\textcolor{yellow}{2.45GHz Microwave Oven}}
+	\rput[l](1.96,18.62){\textcolor{yellow}{2.45GHz Мікрохвильова піч}}
 	\psline{-*}(1.92,18.62)(1.86,18.62)(1.86,18.5)
 }
 
@@ -854,7 +854,7 @@
   \psline[linecolor=Black,linewidth=1pt,linestyle=solid](6.52,20.05)(6.52,20.25)
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](6.52,20.02)
   \rput(6.52,20.15){\textcolor{white}{27.25GHz}}
-  \rput(8,20.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave Ka-band (Kurtz Above)}}}
+  \rput(8,20.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий Ka-діапазон (Kurtz Above)}}}
 
 %from http://www.jneuhaus.com/fccindex/letter.html
 %Q  36 - 46 GHz
@@ -863,7 +863,7 @@
   \psline[linecolor=Black,linewidth=1pt,linestyle=solid](0.66,20.55)(0.66,20.75)
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](0.66,20.52)
   \rput(0.66,20.65){\textcolor{white}{36GHz}}
-  \rput(2.39,20.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave Q-band}}}
+  \rput(2.39,20.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий Q-діапазон}}}
 
 % Cellular phone notes:
 % https://en.wikipedia.org/wiki/Cellular_frequencies  
@@ -898,7 +898,7 @@
   \psline[linecolor=Black,linewidth=1pt,linestyle=solid](4.12,20.55)(4.12,20.75)
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](4.12,20.52)
   \rput(4.12,20.65){\textcolor{white}{46GHz}}
-  \rput(5.52,20.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave V-band}}}
+  \rput(5.52,20.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий V-діапазон}}}
 
 %W  56 - 100 GHz
   \definecolor{Fill}{rgb}{0.9,0.1,0.67}\psset{hatchcolor=Fill}
@@ -907,7 +907,7 @@
   \psline[linecolor=Black,linewidth=1pt,linestyle=solid](6.91,20.55)(6.91,20.75)
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](6.91,20.52)
   \rput(6.91,20.65){\textcolor{white}{56GHz}}
-  \rput(2.65,21.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave W-band}}}
+  \rput(2.65,21.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохвильовий W-діапазон}}}
 
   % Microwave mm-band (40-300 GHz)
 %  \definecolor{Fill}{rgb}{0.9,0.1,0.67}\psset{hatchcolor=Fill}
@@ -916,7 +916,7 @@
 %  \psframe(0.00,21.55)(9.80,21.75)\wrapbtarrow{Fill}{21.65}
 %  \psframe(0.00,22.05)(1.24,22.25)\wrapdnarrow{Fill}{22.15}
 %  \rput(2.15,20.65){\textcolor{white}{40GHz}}
-%  \rput(8,21.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Microwave mm-band}}}
+%  \rput(8,21.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Мікрохв. мм-діапазон}}}
 
   %O2 absorption line at 60GHz	http://www.wmo.ch/web/www/TEM/SG-RFC/Ch-5Final.doc
 % (7.88,20.55) -1.2x
@@ -924,7 +924,7 @@
   \psclip{\psframe[fillstyle=none,linestyle=none](0,0)(2.4,.3)}
     \pscurve[fillstyle=crosshatch,hatchcolor=Black,hatchangle=180,hatchwidth=0.5pt,hatchsep=1pt,fillcolor=blue,linecolor=Black,linestyle=solid]
 	(0,.2)(.75,.15)(1,.02)(1.25,.15)(2,0.2)
-    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{$O_2$ absorption 60GHz}}}
+    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{Поглинання $O_2$ 60GHz}}}
   \endpsclip}
 
 
@@ -950,7 +950,7 @@
   \psclip{\psframe[fillstyle=none,linestyle=none](0,0)(2.4,.3)}
     \pscurve[fillstyle=crosshatch,hatchcolor=Black,hatchangle=180,hatchwidth=0.5pt,hatchsep=1pt,fillcolor=blue,linecolor=Black,linestyle=solid]
 	(0,.2)(.75,.15)(1,.02)(1.25,.15)(2,0.2)
-    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{$O_2$ absorption 118.75GHz}}}
+    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{Поглинання $O_2$ 118.75GHz}}}
   \endpsclip}
 
 
@@ -962,7 +962,7 @@
   \psclip{\psframe[fillstyle=none,linestyle=none](0,0)(2.4,.3)}
     \pscurve[fillstyle=crosshatch,hatchcolor=Black,hatchangle=180,hatchwidth=0.5pt,hatchsep=1pt,fillcolor=blue,linecolor=Black,linestyle=solid]
 	(0,.2)(.75,.15)(1,.02)(1.25,.15)(2,0.2)
-    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{Water absorption 183GHz}}}
+    \rput(1,.2){\psframebox[framesep=1pt,framearc=0.2,fillstyle=solid, fillcolor=Black,linewidth=0pt,linestyle=none]{\textcolor{white}{Поглинання водою 183GHz}}}
   \endpsclip}
 
  
@@ -984,7 +984,7 @@
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](4.39,23.52)
   \rput(4.39,23.70){\textcolor{white}{\si{100\micro\meter}}}
   \rput(4.39,23.60){\textcolor{white}{3THz}}
-  \rput(4.9,24.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Far Infrared}}}
+  \rput(4.9,24.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Далеке інфрачервоне}}}
 
 
   % Thermal Infrared 30-3 um	10-100 THz
@@ -995,7 +995,7 @@
   \psframe(0.00,26.05)(4.97,26.25)\wrapdnarrow{Fill}{26.15}
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](1.81,24.52)
   \rput(1.81,24.65){\textcolor{white}{\si{30\micro\meter}}}
-  \rput(4.9,25.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Thermal Infrared}}}
+  \rput(4.9,25.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Теплове інфрачервоне}}}
 
   % Near Infrared 3um-760nm 	100-394 THz
   \definecolor{Fill}{rgb}{0.7,0,0}\psset{hatchcolor=Fill}
@@ -1004,7 +1004,7 @@
   \psframe(0.00,27.05)(4.75,27.25)\wrapdnarrow{Fill}{27.15}
   \psdots[linewidth=1.2pt,linecolor=white,linestyle=none, fillcolor=white, dotstyle=triangle*](4.97,26.02)
   \rput(4.97,26.15){\textcolor{white}{\si{3\micro\meter}}}
-  \rput(5.3,26.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Near Infrared}}}
+  \rput(5.3,26.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{white}{Ближнє інфрачервоне}}}
 
   
 % Er - Erbium-Doped Fiber Amplifier (EDFA) Thanks to E. Alan Dowdell for this information and his papers
@@ -1097,8 +1097,8 @@
 	(0.34,27.52)(0.61,27.52)(0.89,27.52)(1.18,27.52)(1.47,27.52)(1.77,27.52)(2.07,27.52)(2.38,27.52)
 	(2.70,27.52)(2.70,27.52)(3.02,27.52)(3.36,27.52)(3.70,27.52)(4.05,27.52)
 
-  \rput(8.37,27.15){VISIBLE SPECTRUM}
-  \rput(2,27.65){VISIBLE SPECTRUM}
+  \rput(8.37,27.15){ВИДИМИЙ СПЕКТР}
+  \rput(2,27.65){ВИДИМИЙ СПЕКТР}
 
 
   \input{tex/astrofilter.tex}
@@ -1162,7 +1162,7 @@
   \psline[linestyle=solid,linecolor=Black,linewidth=1pt](4.06,28.55)(4.06,28.75)
   %\rput(4.90,29.2){EUV}
   %\rput(4.90,29.1){(Extreme Ultraviolet)}
-  \rput(4.90,29.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{EUV (Extreme Ultraviolet)}}
+  \rput(4.90,29.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{EUV (Екстремальний ультрафіолет)}}
   }}
   %\rput(4.06,28.65){100nm}
   \rput[B](4.06,28.5){\psframebox[fillstyle=solid,fillcolor=white,framesep=1pt]{100nm}}
@@ -1184,7 +1184,7 @@
   %\rput(7.21,30.15){10nm}
   }}
   \rput[B](7.21,30){\psframebox[fillstyle=solid,fillcolor=white,framesep=1pt]{10nm}}
-  \rput(4.90,31.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{Black}{Soft XRay}}}
+  \rput(4.90,31.15){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{Black}{М'яке рентгенівське}}}
 
   % Hard XRay 	0.1-1 nm	 .3 - 3    EHz
   \definecolor{Fill}{rgb}{1,0.9,0}\psset{hatchcolor=Fill}
@@ -1198,7 +1198,7 @@
   %
   \psline[linestyle=solid,linecolor=Black,linewidth=1pt](0.57,32)(0.57,32.25)
   \rput[B](0.57,32){\psframebox[fillstyle=solid,fillcolor=white,framesep=1pt]{1nm}}
-  \rput(4.90,32.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{Black}{Hard XRay}}}
+  \rput(4.90,32.65){\psframebox[fillstyle=solid,fillcolor=Fill,framesep=2pt]{\textcolor{Black}{Жорстке рентгенівське}}}
 
 
   % pull in precompiled labels
@@ -1219,7 +1219,7 @@
   %
   \psline[linestyle=solid,linecolor=Black,linewidth=1pt](3.72,33.5)(3.72,33.75)
   \rput[B](3.72,33.5){\psframebox[fillstyle=solid,fillcolor=white,framesep=1pt]{0.1nm}}
-  \rput(6,33.65){\psframebox[fillstyle=solid,fillcolor=GammRayColor,framesep=2pt]{\textcolor{Black}{Gamma Ray}}}
+  \rput(6,33.65){\psframebox[fillstyle=solid,fillcolor=GammRayColor,framesep=2pt]{\textcolor{Black}{Гамма-промені}}}
   \psline[linecolor=white,linestyle=solid,linewidth=1pt]{->}(6.9,34.152)(7,34.152)
   \psframe[fillstyle=gradient,gradangle=90,gradbegin=GammRayColor,gradend=white,gradmidpoint=1.0,linewidth=0pt,linestyle=none](6,34.143)(6.97,34.157)
   \uput{2pt}[0](7.07,34.02){\textcolor{EColor}{$\infty$eV}}
@@ -1292,19 +1292,19 @@
 \psset{fillstyle=solid, fillcolor=yellow,linecolor=yellow,linewidth=1pt,linestyle=solid,framearc=0.4, framesep=0}
 % GPS-L1: 1575.4200 MHz (Civil Frequency  Coarse Acquisition)
 \psline(5.42,18.20)(5.42,18)
-\rput(5.42,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Civil}}}
+\rput(5.42,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Цив.}}}
 	
 % GPS-L2: 1227.60 MHz (Military Frequency  	(encrypted) Available 2003)
 \psline(1.89,18.20)(1.89,18)
-\rput(1.89,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Mil.}}}
+\rput(1.89,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Війс.}}}
 
 % GPS-L3: 1381.0500 MHz (Nuclear Burst Detection  	NUDET - Nuclear Detonation)
 \psline(3.56,18.20)(3.56,18)
-\rput(3.56,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Nuc.}}}
+\rput(3.56,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Яд.}}}
 
 % GPS-L4: 1841.4000 MHz (Ionospheric correction  	Proposed)
 \psline(7.63,18.20)(7.63,18)
-\rput(7.63,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Ion.}}}
+\rput(7.63,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Іон.}}}
 
 % GPS-L5: 1176.45 MHz (Proposed Frequency for 2008)
 \psline(1.29,18.20)(1.29,18)
@@ -1312,7 +1312,7 @@
 
 % GPS 2227.5000MHz Spacecraft Telemetry 
 \psline(0.52,18.20)(0.52,18)
-\rput(0.52,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Space}}}
+\rput(0.52,18.15){\psframebox[boxsep=false]{\parbox{0.25in}{\centering GPS\\\tiny Косм.}}}
 }
 
 
@@ -1362,59 +1362,59 @@
 
   % ULF	Ultra Low Frequency  3 - 30Hz  source  http://www.haarp.alaska.edu/haarp/elf.html
   \psline{<->}(\EMRPosition,3.792)(\EMRPosition,5.453)
-  \rput{90}(\EMRPosition,4.623){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{ULF Ultra Low Frequency}}}
+  \rput{90}(\EMRPosition,4.623){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{ULF Ультранизька частота}}}
   \rput[t]{90}(\EMRPositionC,3.792){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=LightRange,gradend=Black]{\textcolor{RangesText}{3Hz}}}
 
   %ELF Extremely Low Frequency  30 - 3kHz
   \psline{<->}(\EMRPosition,5.453)(\EMRPosition,8.776)
-  \rput{90}(\EMRPosition,7.115){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{ELF Extremely Low Frequency}}}
+  \rput{90}(\EMRPosition,7.115){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{ELF Надзвичайно низька частота}}}
   \rput[t]{90}(\EMRPositionC,5.453){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=DarkRange,gradend=LightRange]{\textcolor{RangesText}{30Hz}}}
 
   % VLF	Very Low Frequency	100km - 10km	3kHz - 30kHz
   \psline{<->}(\EMRPosition,8.776)(\EMRPosition,10.436)
-  \rput{90}(\EMRPosition,9.577){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{VLF Very Low Frequency}}}
+  \rput{90}(\EMRPosition,9.577){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{VLF Дуже низька частота}}}
   \rput[t]{90}(\EMRPositionC,8.776){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=LightRange,gradend=DarkRange]{\textcolor{RangesText}{3kHz}}}
 
   % LF 	Low Frequency		10km - 1km	30kHz - 300kHz
   \psline{<->}(\EMRPosition,10.436)(\EMRPosition,12.097)
-  \rput{90}(\EMRPosition,11.245){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{LF Low Frequency}}}
+  \rput{90}(\EMRPosition,11.245){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{LF Низька частота}}}
   \rput[t]{90}(\EMRPositionC,10.436){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=DarkRange,gradend=LightRange]{\textcolor{RangesText}{30kHz}}}
 
   % MF 	Medium frequency 	1km - 100m	300-3000 kHz
   \psline{<->}(\EMRPosition,12.097)(\EMRPosition,13.758)
-  \rput{90}(\EMRPosition,12.913){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{MF Medium Frequency}}}
+  \rput{90}(\EMRPosition,12.913){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{MF Середня частота}}}
   \rput[t]{90}(\EMRPositionC,12.097){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=LightRange,gradend=DarkRange]{\textcolor{RangesText}{300kHz}}}
 
   % HF 	High frequency 		100m - 10m	3-30 MHz
   \psline{<->}(\EMRPosition,13.758)(\EMRPosition,15.419)
-  \rput{90}(\EMRPosition,14.561){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{HF High Frequency}}}
+  \rput{90}(\EMRPosition,14.561){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{HF Висока частота}}}
   \rput[t]{90}(\EMRPositionC,13.758){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=DarkRange,gradend=LightRange]{\textcolor{RangesText}{3MHz}}}
 
   % VHF	Very High Frequency	10m - 1m	30 - 300 MHz
   \psline{<->}(\EMRPosition,15.419)(\EMRPosition,17.080)
-  \rput{90}(\EMRPosition,16.229){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{VHF Very High Frequency}}}
+  \rput{90}(\EMRPosition,16.229){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{VHF Дуже висока частота}}}
   \rput[t]{90}(\EMRPositionC,15.419){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=LightRange,gradend=DarkRange]{\textcolor{RangesText}{30MHz}}}
 
   % UHF	Ultra High Frequency	1m - 10cm	300MHz - 3GHz
   \psline{<->}(\EMRPosition,17.080)(\EMRPosition,18.741)
-  \rput{90}(\EMRPosition,17.897){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{UHF Ultra High Frequency}}}
+  \rput{90}(\EMRPosition,17.897){\psframebox[fillcolor=DarkRange]{\textcolor{RangesText}{UHF Ультрависока частота}}}
   \rput[t]{90}(\EMRPositionC,17.080){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=DarkRange,gradend=LightRange]{\textcolor{RangesText}{300MHz}}}
 
   % SHF Super High Frequency	10cm - 1cm	3GHz - 30GHz 
   \psline{<->}(\EMRPosition,18.741)(\EMRPosition,20.402)
-  \rput{90}(\EMRPosition,19.545){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{SHF Super High Frequency}}}
+  \rput{90}(\EMRPosition,19.545){\psframebox[fillcolor=LightRange]{\textcolor{RangesText}{SHF Надвисока частота}}}
   \rput[t]{90}(\EMRPositionC,18.741){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=LightRange,gradend=DarkRange]{\textcolor{RangesText}{3GHz}}}
 
   % EHF Extremely High Frequency 1cm - 1mm	30GHz - 300GHz
   \psline{<->}(\EMRPosition,20.402)(\EMRPosition,22.063)
-  \rput{90}(\EMRPosition,21.214){\psframebox[fillcolor=DarkRange]{\footnotesize\textcolor{RangesText}{EHF Extremely High Frequency}}}
+  \rput{90}(\EMRPosition,21.214){\psframebox[fillcolor=DarkRange]{\footnotesize\textcolor{RangesText}{EHF Надзвичайно висока частота}}}
   \rput[t]{90}(\EMRPositionC,20.402){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=DarkRange,gradend=LightRange]{\textcolor{RangesText}{30GHz}}}
   \rput[t]{90}(\EMRPositionC,22.063){\psframebox[linestyle=none, fillstyle=gradient,gradbegin=Black,gradend=DarkRange]{\textcolor{RangesText}{300GHz}}}
 
 
   % Microwave mm-band (40-300 GHz)
   \psline{<->}(\EMRPositionD,20.610)(\EMRPositionD,22.063)
-  \rput{90}(\EMRPositionD,21.34){\psframebox[fillcolor=DarkRange]{\footnotesize\textcolor{RangesText}{Microwave mm-band}}}
+  \rput{90}(\EMRPositionD,21.34){\psframebox[fillcolor=DarkRange]{\footnotesize\textcolor{RangesText}{Мікрохв. мм-діапазон}}}
 
   % Microwave u mm band (300 - 3000 GHz)(Terahertz 1mm - 100umm)
   \psline{<->}(\EMRPositionD,22.063)(\EMRPositionD,23.724)
@@ -1422,7 +1422,7 @@
 		\psframebox[fillcolor=DarkRange]{%
 			\parbox{1.3in}{%
 				\centering
-				\footnotesize \textcolor{RangesText}{Microwave\ } \SI[color=RangesText]{}{\micro\milli\meter-band}\\\textcolor{RangesText}{Terahertz rays}
+				\footnotesize \textcolor{RangesText}{Мікрохв.\ } \SI[color=RangesText]{}{\micro\milli\meter}\textcolor{RangesText}{-діапазон}\\\textcolor{RangesText}{Терагерцові промені}
 			}%
 		}%
 	}%
@@ -1452,13 +1452,13 @@
   % Includes traditional AM radio region. These frequencies can travel long distances by multiple
   %reflections between the surface of the earth and its ionosphere.
   \psline[linecolor=RangesText]{<->}(\EMRPositionD,9.144)(\EMRPositionD,12.521)
-  \rput{90}(\EMRPositionD,10.83){\psframebox[fillstyle=gradient,gradbegin=DarkRange,gradend=LightRange,gradangle=270,gradmidpoint=1]{\textcolor{RangesText}{Long Wave radio}}}
+  \rput{90}(\EMRPositionD,10.83){\psframebox[fillstyle=gradient,gradbegin=DarkRange,gradend=LightRange,gradangle=270,gradmidpoint=1]{\textcolor{RangesText}{Довгі хвилі}}}
 
   %Short-wave radio 1700kHz-30MHz  http://www.dxing.com/swlintro.htm
   % Used for TV, FM, and other communication purposes. Generally travels only relatively
   %short distances because the ionosphere is transparent to it.
   \psline[linecolor=RangesText]{<->}(\EMRPositionD,13.349)(\EMRPositionD,15.419)
-  \rput{90}(\EMRPositionD,14.38){\psframebox[fillstyle=solid,fillcolor=DarkRange]{\textcolor{RangesText}{Short Wave radio}}}
+  \rput{90}(\EMRPositionD,14.38){\psframebox[fillstyle=solid,fillcolor=DarkRange]{\textcolor{RangesText}{Короткі хвилі}}}
 
 
 
@@ -1535,7 +1535,7 @@
 	gradmidpoint=1.0,
 	linewidth=0pt,
 	linestyle=none](\AudioPositionC,3.007)(\AudioPositionD,3.107)
-\rput(\AudioPositionH,3.29){\begin{minipage}[t]{0.6in}{\begin{center}\textcolor{white}{Heart beats}\end{center}}\end{minipage}}
+\rput(\AudioPositionH,3.29){\begin{minipage}[t]{0.6in}{\begin{center}\textcolor{white}{Серцебиття}\end{center}}\end{minipage}}
 
 
 %Ocean waves thanks to Ward Cunningham
@@ -1557,13 +1557,13 @@
 	gradmidpoint=1.0,
 	linewidth=0pt,
 	linestyle=none](\AudioPositionC,1.082)(\AudioPositionD,2.132)
-\rput(\AudioPositionH,1.12){\begin{minipage}[t]{0.6in}{\begin{center}\textcolor{white}{Ocean waves}\end{center}}\end{minipage}}
+\rput(\AudioPositionH,1.12){\begin{minipage}[t]{0.6in}{\begin{center}\textcolor{white}{Океанські хвилі}\end{center}}\end{minipage}}
 
 \psframe[fillstyle=solid,
 	linewidth=0pt,
 	fillcolor=FColor,
 	linestyle=none](\AudioPositionC,.36)(\AudioPositionD,0)
-\rput(\AudioPositionH,0.19){\begin{minipage}[t]{0.6in}{\begin{center}\textcolor{black}{Pressure waves}\end{center}}\end{minipage}}
+\rput(\AudioPositionH,0.19){\begin{minipage}[t]{0.6in}{\begin{center}\textcolor{black}{Хвилі тиску}\end{center}}\end{minipage}}
 % \rput(\AudioPositionE,.19){\textcolor{black}{Mechanical}}
 % \rput(\AudioPositionE,.07){\textcolor{black}{Waves}}
 
@@ -1573,11 +1573,11 @@
 \psline[linecolor=AudioLineColor]{-<}(\AudioPositionC,0)(\AudioPositionC,\LowerAudioRange) %Subsonic arrow
 %Audio left side labels
 \rput{90}(\AudioPositionC,7.64){%
-	\psframebox[framearc=0.25,fillstyle=solid,fillcolor=BoxColor,linecolor=AudioLineColor]{\textcolor{AudioLineColor}{Human Audible range}}}
+	\psframebox[framearc=0.25,fillstyle=solid,fillcolor=BoxColor,linecolor=AudioLineColor]{\textcolor{AudioLineColor}{Діапазон слуху людини}}}
 \rput{90}(\AudioPositionC,10.644){%
-	\psframebox[framearc=0.25, fillstyle=solid,fillcolor=BoxColor, linecolor=AudioLineColor]{\textcolor{AudioLineColor}{Ultrasonic}}}
+	\psframebox[framearc=0.25, fillstyle=solid,fillcolor=BoxColor, linecolor=AudioLineColor]{\textcolor{AudioLineColor}{Ультразвук}}}
 \rput{90}(\AudioPositionC,4.4){%
-	\psframebox[framearc=0.25, fillstyle=solid,fillcolor=BoxColor, linecolor=AudioLineColor]{\textcolor{AudioLineColor}{Subsonic - Infrasound}}}
+	\psframebox[framearc=0.25, fillstyle=solid,fillcolor=BoxColor, linecolor=AudioLineColor]{\textcolor{AudioLineColor}{Інфразвук}}}
   	
   	
 
@@ -1602,7 +1602,7 @@
 		\pscircle[linestyle=none, fillcolor=FColor, fillstyle=solid](0,0){0.44}
 		\psarc[linecolor=black, linewidth=2pt, linestyle=solid,fillstyle=none]{<-<}(0,0){0.37in}{90}{85}
 		}
-	\rput(0,0){\parbox[t]{.6in}{\centering One cycle per second}}
+	\rput(0,0){\parbox[t]{.6in}{\centering Один цикл на секунду}}
 }
   
   
@@ -1610,7 +1610,7 @@
 %Ionizing radiation (>10eV) has enough energy to strip electrons from an atom or, in the case of very high-energy radiation, break up the nucleus of the atom. This effect can cause damage to living tissue. 
 %Must be moved over a little to the right to avoid hitting the suffixes
 \psline[linewidth=0.14in,linecolor=IonizingYellow]{->}(1.11,28.551)(1.11,34.5)
-\rput[l]{90}(1.12,28.6){Ionizing radiation : Harmful to living tissue.}
+\rput[l]{90}(1.12,28.6){Іонізуюче випромінювання: шкідливе для живих тканин.}
 
   %Cosmic Background Radiation
   \rput{0}(10.2,20.96){\input{tex/cmb.tex}}

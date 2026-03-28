@@ -1,25 +1,25 @@
 
 ==========================================================================
-Requirements:
-For viewing:
-	Adobe Acobat Reader (acroread) version 5 does a nice job of
-	smoothing the lines.
+Вимоги:
+Для перегляду:
+	Adobe Acrobat Reader (acroread) версія 5 добре
+	згладжує лінії.
 
-If you want to make changes and compile your own copy:
+Якщо ви хочете внести зміни та скомпілювати власну копію:
 	LaTeX
 	Ghostscript
-	SIunits (Tex) for the mathematical symbols.
+	SIunits (Tex) для математичних символів.
 	PSTricks
 
-On Debian-derived systems, install the following packages:
+На системах на базі Debian встановіть наступні пакети:
 	ghostscript
-	texlive-science (for SIunits)
-	texlive-pstricks (for PSTricks)
-	texlive-lang-cyrillic (for Cyrillic text)
+	texlive-science (для SIunits)
+	texlive-pstricks (для PSTricks)
+	texlive-lang-cyrillic (для кириличного тексту)
 
 ==========================================================================
-To Build from source:
+Збірка з вихідного коду:
 
 ./configure && make
 
-The output is in spectrum_current.pdf
+Результат знаходиться у spectrum_current.pdf
