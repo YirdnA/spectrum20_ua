@@ -17,7 +17,7 @@
 %M=multiplying height factor since we need smaller pgfplots height than allowed.
 \newcommand{\nRainbowStartFreq}{5}% Start frequency.
 \newcommand{\nB}{40}% End frequency - start frequency.
-\newcommand{\nC}{1e3}% Number of samples. (was 1e3)
+\newcommand{\nRainbowC}{1e3}% Number of samples. (was 1e3)
 \newcommand{\nM}{0.35}% Multiplying factor for amplitude.
 
 \pgfplotsset{
@@ -30,12 +30,12 @@
 		rgb255(0cm)=(128,0,0); rgb255(1cm)=(255,0,0); rgb255(2cm)=(255,255,0);
 		rgb255(3cm)=(100,255,0);rgb255(4cm)=(0,255,255); rgb255(5cm)=(0,0,180)},
 	samples=8000,%was 1000, but capacity exceeded , looked into -shell escape external method make nonoverlapping pdfs (on separate pages).
-	domain=1:\nC%range
+	domain=1:\nRainbowC%range
 }
 
 \begin{tikzpicture}[rotate=90]
 	\begin{axis}[width=48in,height=0.9in]
-		\addplot [white,line width=3pt,line join=round, line cap=round]             {\nM * sin(\nRainbowStartFreq * x + \nB * (x^2) / \nC)};
-		\addplot [mesh,point meta=x,line width=2pt,line join=round, line cap=round] {\nM * sin(\nRainbowStartFreq * x + \nB * (x^2) / \nC)};
+		\addplot [white,line width=3pt,line join=round, line cap=round]             {\nM * sin(\nRainbowStartFreq * x + \nB * (x^2) / \nRainbowC)};
+		\addplot [mesh,point meta=x,line width=2pt,line join=round, line cap=round] {\nM * sin(\nRainbowStartFreq * x + \nB * (x^2) / \nRainbowC)};
 	\end{axis}
 \end{tikzpicture}
